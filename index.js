@@ -32,6 +32,9 @@ async function run() {
 
 
         })
+        app.get('/hello',(req,res)=>{
+            res.send('hello updated here')
+        })
 
         //post api
         app.post('/services', async (req, res) => {
